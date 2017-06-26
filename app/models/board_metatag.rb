@@ -1,0 +1,2 @@
+class BoardMetatag < ApplicationRecord
+end
