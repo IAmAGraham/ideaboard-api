@@ -23,9 +23,19 @@ UserBoard.create(user_id:1, board_id:1)
 
 Metatag.create(tagname:'web app')
 Metatag.create(tagname:'mobile app')
-Metatag.create(tagname:'mobile app')
+Metatag.create(tagname:'web & mobile app')
 
 BoardMetatag.create(board_id:1, metatag_id:1)
+BoardMetatag.create(board_id:2, metatag_id:2)
+BoardMetatag.create(board_id:3, metatag_id:3)
+BoardMetatag.create(board_id:4, metatag_id:1)
+BoardMetatag.create(board_id:5, metatag_id:2)
+BoardMetatag.create(board_id:6, metatag_id:3)
+BoardMetatag.create(board_id:7, metatag_id:1)
+BoardMetatag.create(board_id:8, metatag_id:2)
+BoardMetatag.create(board_id:9, metatag_id:3)
+BoardMetatag.create(board_id:10, metatag_id:1)
+
 
 #Thanks to itsthisforthat.com for helping me with my seeded data
 # & my own witty brain for the clever titles

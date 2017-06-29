@@ -1,5 +1,5 @@
 class Api::V1::BoardsController < ApplicationController
-  before_action :authorize_user!
+  # before_action :authorize_user!
 
   def index
     boards = Board.all
@@ -8,7 +8,7 @@ class Api::V1::BoardsController < ApplicationController
 
   def create
     board = Board.create(board_params)
-    render json: board 
+    render json: board
   end
 
   def update
