@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 20170629180356) do
   create_table "boards", force: :cascade do |t|
     t.string "title"
     t.string "description"
+    # why metatag
     t.string "metatag"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
