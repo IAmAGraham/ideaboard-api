@@ -22,7 +22,6 @@ ActiveRecord::Schema.define(version: 20170629180356) do
   create_table "boards", force: :cascade do |t|
     t.string "title"
     t.string "description"
-    t.string "metatag"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -36,8 +35,9 @@ ActiveRecord::Schema.define(version: 20170629180356) do
   create_table "stickies", force: :cascade do |t|
     t.integer "x"
     t.integer "y"
-    t.string "content"
+    t.text "content"
     t.integer "board_id"
+    t.integer "IID"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

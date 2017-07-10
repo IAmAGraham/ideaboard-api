@@ -37,5 +37,8 @@ BoardMetatag.create(board_id:9, metatag_id:3)
 BoardMetatag.create(board_id:10, metatag_id:1)
 
 
+Sticky.create(board_id:1, x:0, y:0, content:'User Story')
+
+
 #Thanks to itsthisforthat.com for helping me with my seeded data
 # & my own witty brain for the clever titles
