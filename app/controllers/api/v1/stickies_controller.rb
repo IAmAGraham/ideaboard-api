@@ -11,6 +11,11 @@ class Api::V1::StickiesController < ApplicationController
     render json: sticky
   end
 
+  def show
+    sticky = Sticky.find(params[:id])
+    render json: sticky
+  end
+
   def update
     sticky = Sticky.find(params[:id])
     sticky.update(sticky_params)
@@ -20,6 +25,7 @@ class Api::V1::StickiesController < ApplicationController
   def destroy
     sticky = Sticky.find(params[:id])
     sticky.destroy
+    # stickies = stickies.all
     render json: sticky
   end
 
